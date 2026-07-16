@@ -104,7 +104,7 @@ def generate_recommendations(prompt, tokenizer, model):
     inputs=inputs.to(model.device)
 
     outputs=model.generate(**inputs,
-        max_new_tokens=300,
+        max_new_tokens=50,
         do_sample=False
     )
 
